@@ -1,0 +1,6 @@
+import {useCurrentFrame,useVideoConfig} from 'remotion';
+import {Frame,Kicker,Terminal,colors} from './Design';
+export const Investigation=()=>{
+ const f=useCurrentFrame();const {fps}=useVideoConfig();
+ return <Frame chapter="02 / FOLLOW THE EVIDENCE"><div style={{position:'absolute',left:70,right:70,top:105}}><Kicker>READ THE FILES. FIND WHAT WAS LEFT BEHIND.</Kicker><h2 style={{fontSize:43,fontWeight:400,margin:'0 0 30px'}}>A project dies twice.</h2>{f/fps<8?<Terminal command="cat notes/mission.txt" output={'DAY 01 / THE COLD STORAGE PROBLEM\nA project dies twice: when its maintainer leaves,\nthen when its last mirror disappears.\nECHO keeps the source, licenses, and credit alive.'}/>:<Terminal key="mnemonic" start={8} command="cat notes/mnemonic.txt" output={'A note taped beneath the monitor:\nKeep / Every / Echo / Present\n\nFour initial letters. Lowercase. No spaces.'}/>}<div style={{display:'flex',justifyContent:'space-between',marginTop:24,fontSize:19,color:colors.dim}}><span><span style={{color:colors.green}}>03</span> acts</span><span><span style={{color:colors.green}}>07</span> clues</span><span><span style={{color:colors.green}}>02</span> puzzles</span><span>Fictional filesystem · no host commands</span></div></div></Frame>;
+};

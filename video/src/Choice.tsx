@@ -1,0 +1,6 @@
+import {interpolate,useCurrentFrame,useVideoConfig} from 'remotion';
+import {Frame,Kicker,colors,clamp} from './Design';
+export const Choice=()=>{
+ const f=useCurrentFrame();const {fps}=useVideoConfig();
+ return <Frame chapter="04 / THE HUMAN CHECKPOINT"><div style={{position:'absolute',left:80,right:80,top:125}}><Kicker>THE FINAL DECISION BELONGS TO YOU.</Kicker><h2 style={{fontSize:55,fontWeight:400,lineHeight:1.2,margin:'0 0 40px'}}>Keep the archive.<br/>Or let the process rest.</h2><div style={{display:'flex',gap:24,opacity:interpolate(f,[fps,2*fps],[0,1],clamp)}}><div style={{flex:1,border:`1px solid ${colors.green}`,padding:28,background:'#1a2a18'}}><div style={{fontSize:28,color:colors.green,marginBottom:20}}>&gt; preserve</div><div style={{fontSize:22,lineHeight:1.5}}>An opt-in archive.<br/>Attribution. New maintainers.</div></div><div style={{flex:1,border:`1px solid ${colors.border}`,padding:28}}><div style={{fontSize:28,color:colors.amber,marginBottom:20}}>&gt; release</div><div style={{fontSize:22,lineHeight:1.5}}>A graceful shutdown.<br/>Rest is also maintenance.</div></div></div><p style={{color:colors.dim,fontSize:17,marginTop:28}}>ECHO is fictional software. The story never claims a person is trapped inside.</p></div></Frame>;
+};
