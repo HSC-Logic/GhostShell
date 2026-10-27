@@ -2,6 +2,8 @@
 
 An editable 80-second, 1280 x 720, 30 fps Remotion composition. This is a silent animated explainer with terminal excerpts, not a screen recording or proof of live AI inference.
 
+[Watch or download the exported MP4](https://github.com/HSC-Logic/GhostShell/blob/main/video/exports/ghostshell-demo.mp4).
+
 ## Preview
 
 ```powershell

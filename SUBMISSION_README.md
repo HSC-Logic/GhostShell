@@ -14,15 +14,15 @@ I interpreted “Ghost in the Machine” as the traces people leave in software:
 
 ## Demo
 
+[Watch or download the GhostShell demo (MP4)](https://github.com/HSC-Logic/GhostShell/blob/main/video/exports/ghostshell-demo.mp4) — 80 seconds, 1280 × 720, 30 fps. This silent animated walkthrough shows story excerpts, the ending choices, and why local, open AI matters.
+
 GhostShell runs locally in your browser at `http://localhost:5173` after starting the frontend and backend. Setup instructions are in the [project README](https://github.com/HSC-Logic/GhostShell#readme).
 
 Choose **Scripted demo** to explore without installing a model. This mode uses clearly labeled, prewritten dialogue. To experience AI-generated ghost reactions, install Ollama and the configured model, then choose live mode.
 
 The [three-minute demo guide](https://github.com/HSC-Logic/GhostShell/blob/main/docs/demo-script.md) includes a recording outline and a complete walkthrough with spoilers.
 
-An [80-second Remotion video project](https://github.com/HSC-Logic/GhostShell/tree/main/video) presents the mystery, ending choices, and local AI architecture. It includes an editable preview and MP4 export instructions. The video uses scripted terminal excerpts; it is not a recording of live model inference.
-
-<!-- Before publishing on DEV: replace this comment with an uploaded video or a public demo link. Localhost is only accessible on your own computer. -->
+The [Remotion video source](https://github.com/HSC-Logic/GhostShell/tree/main/video) includes an editable preview and export instructions. The video uses scripted terminal excerpts; it is not a recording of live model inference. The playable application runs locally; the MP4 above is the public demo.
 
 ## Code
 
